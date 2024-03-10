@@ -31,13 +31,19 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 ```sh
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si && cd && rm -rf paru
 ```
-### shell
+### zsh
 ```sh
 sudo pacman -S zsh &&
-yay -S --noconfirm zsh-theme-powerlevel10k-git &&
-echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc &&
 echo "alias ls='exa --icons --group-directories-first'" >> ~/.zshrc &&
 echo "alias v='nvim'" >> ~/.zshrc &&
 chsh -s /usr/bin/zsh
+```
+### powerlevel10k or starship
+```sh
+yay -S --noconfirm zsh-theme-powerlevel10k-git && echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+```
+Starship:
+```sh
+sudo pacman -S starship && echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 ```
 Run `p10k configure` to enter p10k wizard
