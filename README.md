@@ -1,7 +1,11 @@
-# dotfiles
+# Arch post-install
 First
 ```sh
 sudo pacman -Syu nano
+```
+## If on a Virtual Machine
+```sh
+pacman -S virtualbox-guest-utils && systemctl enable vboxservice.service
 ```
 ## Add user
 ```sh
@@ -17,7 +21,7 @@ su me && cd
 ```
 ## Installing programs
 ```sh
-sudo pacman -S neovim firefox alacritty exa
+sudo pacman -S git neovim firefox alacritty exa ttf-jetbrains-mono-nerd
 ```
 ### yay
 ```sh
@@ -32,3 +36,4 @@ echo "alias ls='exa --icons --group-directories-first'" >> ~/.zshrc &&
 echo "alias v='nvim'" >> ~/.zshrc &&
 chsh -s /usr/bin/zsh
 ```
+Run `p10k configure` to enter p10k wizard
