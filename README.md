@@ -1,5 +1,4 @@
 # dotfiles
-git yay zsh powerlevel10k neovim alacritty exa
 First
 ```sh
 sudo pacman -Syu nano
@@ -12,12 +11,24 @@ Remove comment from %wheel NOPASSWD line
 ```sh
 EDITOR=nano visudo
 ```
-Then `su me` and `cd`
-## yay
+Then
+```sh
+su me && cd
+```
+## Installing programs
+```sh
+sudo pacman -S neovim firefox alacritty exa
+```
+### yay
 ```sh
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd && rm -rf yay
 ```
-## zsh
+### shell
 ```sh
-sudo pacman -S zsh
+sudo pacman -S zsh &&
+sudo yay -S --noconfirm zsh-theme-powerlevel10k-git &&
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc &&
+echo "alias ls='exa --icons --group-directories-first'" >> ~/.zshrc &&
+echo "alias v='nvim'" >> ~/.zshrc &&
+chsh -s /usr/bin/zsh
 ```
