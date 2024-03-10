@@ -27,6 +27,10 @@ sudo pacman -S git neovim firefox alacritty exa ttf-jetbrains-mono-nerd
 ```sh
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd && rm -rf yay
 ```
+### paru
+```sh
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si && cd && rm -rf paru
+```
 ### shell
 ```sh
 sudo pacman -S zsh &&
