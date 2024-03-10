@@ -30,7 +30,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 ### shell
 ```sh
 sudo pacman -S zsh &&
-sudo yay -S --noconfirm zsh-theme-powerlevel10k-git &&
+yay -S --noconfirm zsh-theme-powerlevel10k-git &&
 echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc &&
 echo "alias ls='exa --icons --group-directories-first'" >> ~/.zshrc &&
 echo "alias v='nvim'" >> ~/.zshrc &&
