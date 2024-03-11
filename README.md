@@ -38,12 +38,28 @@ echo "alias ls='exa --icons --group-directories-first'" >> ~/.zshrc &&
 echo "alias v='nvim'" >> ~/.zshrc &&
 chsh -s /usr/bin/zsh
 ```
-### powerlevel10k or starship
+### fish
 ```sh
-yay -S --noconfirm zsh-theme-powerlevel10k-git && echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+sudo pacman -S fish &&
+echo "alias ls='exa --icons --group-directories-first'" >> ~/.config/fish/config.fish &&
+echo "alias v='nvim'" >> ~/.config/fish/config.fish &&
+chsh -s /usr/bin/fish
 ```
-Starship:
+### powerlevel10k (zsh)
 ```sh
-sudo pacman -S starship && echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+yay -S --noconfirm zsh-theme-powerlevel10k-git &&
+echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+```
+### Starship:
+```sh
+sudo pacman -S starship
+```
+Zsh:
+```sh
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+```
+Fish:
+```sh
+echo "starship init fish | source" >> ~/.config/fish/config.fish
 ```
 Run `p10k configure` to enter p10k wizard
