@@ -33,10 +33,13 @@ local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<leader>f', builtin.find_files, {})
 vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
 
-local config = require("nvim-treesitter.configs")
-config.setup({
-    ensure_intalled = {"lua", "javascript", "elixir", "vim", "c", "python", "rust", "html", "java", "go"},
-    highlight = { enable = true },
+local configs = require("nvim-treesitter.configs")
+configs.setup({
+    ensure_installed = {"lua", "javascript", "c", "python", "rust", "html", "vim"},
+    sync_install = false,
+    auto_install = true,
+    highlight = { enable = true,
+        additional_vim_regex_highlighting = false },
     indent = { enable = true },
 })
 require("catppuccin").setup()
