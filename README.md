@@ -62,4 +62,12 @@ Fish:
 ```sh
 echo "starship init fish | source" >> ~/.config/fish/config.fish
 ```
+Preset:
+```sh
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+```
 Run `p10k configure` to enter p10k wizard
+
+
+
+
