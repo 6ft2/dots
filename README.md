@@ -67,7 +67,3 @@ Preset:
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 ```
 Run `p10k configure` to enter p10k wizard
-
-
-
-
