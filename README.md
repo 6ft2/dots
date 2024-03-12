@@ -41,9 +41,9 @@ chsh -s /usr/bin/zsh
 ### fish
 ```sh
 sudo pacman -S fish &&
+chsh -s /usr/bin/fish &&
 echo "alias ls='exa --icons --group-directories-first'" >> ~/.config/fish/config.fish &&
-echo "alias v='nvim'" >> ~/.config/fish/config.fish &&
-chsh -s /usr/bin/fish
+echo "alias v='nvim'" >> ~/.config/fish/config.fish
 ```
 ### powerlevel10k (zsh)
 ```sh
