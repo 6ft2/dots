@@ -21,7 +21,7 @@ su me && cd
 ```
 ## Installing programs
 ```sh
-sudo pacman -S git neovim firefox alacritty wezterm exa ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols-mono ripgrep fd npm
+sudo pacman -S git neovim firefox alacritty wezterm eza ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols-mono ripgrep fd npm
 ```
 ### yay
 ```sh
