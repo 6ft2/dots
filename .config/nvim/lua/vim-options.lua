@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("let g:loaded_matchparen=1")
 vim.cmd("set relativenumber")
 vim.cmd("set number")
+vim.cmd("set guicursor=n-v-c-i:block")
 vim.g.mapleader = " "
 
 vim.cmd("nmap <leader>e :Lexplore<CR>")
