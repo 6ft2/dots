@@ -16,5 +16,3 @@ style = "Bold"
 [window]
 opacity = 0.9
 decorations = "Full"
-padding = { x = 10, y = 10 }
-dynamic_padding = true
