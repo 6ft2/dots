@@ -52,6 +52,10 @@ Preset:
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 ```
 # Suckless
+## Preparing
+```sh
+sudo pacman -S libxft libxinerama
+```
 In your home directory
 ```sh
 mkdir suckless && cd suckless
@@ -67,4 +71,8 @@ git clone https://git.suckless.org/st
 cd ~/suckless/dwm && sudo make clean install &&
 cd ~/suckless/dmenu && sudo make clean install &&
 cd ~/suckless/st && sudo make clean install
+```
+## xinit file
+```sh
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
 ```
