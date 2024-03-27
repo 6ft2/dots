@@ -81,5 +81,5 @@ Run `startx`.
 ## xrandr
 Run `xrandr` and find the name of the output.
 ```sh
-xrandr --output <output-name> --mode 1920x1080
+xrandr --output <output-name> --mode 1920x1080 --rate 60
 ```
