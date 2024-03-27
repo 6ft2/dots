@@ -51,3 +51,20 @@ Preset:
 ```sh
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 ```
+# Suckless
+## Installing programs
+```sh
+mkdir suckless && cd suckless
+```
+## Clone the programs
+```sh
+git clone https://git.suckless.org/dwm &&
+git clone https://git.suckless.org/dmenu &&
+git clone https://git.suckless.org/st
+```
+## Installing
+```sh
+cd ~/suckless/dwm && sudo make clean install &&
+cd ~/suckless/dmenu && sudo make clean install &&
+cd ~/suckless/st && sudo make clean install
+```
