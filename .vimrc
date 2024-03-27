@@ -3,6 +3,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set laststatus=2
+set number
+set relativenumber
 filetype plugin indent on
 syntax on
 let g:loaded_matchparen= 1
