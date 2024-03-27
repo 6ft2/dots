@@ -52,7 +52,7 @@ Preset:
 starship preset nerd-font-symbols -o ~/.config/starship.toml
 ```
 # Suckless
-## Installing programs
+In your home directory
 ```sh
 mkdir suckless && cd suckless
 ```
