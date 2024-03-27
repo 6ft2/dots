@@ -76,7 +76,10 @@ cd ~/suckless/st && sudo make clean install
 ```sh
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 ```
-Delete the last lines in the file and add `exec dwm` to the bottom
+Open the .xinitrc and delete the last lines in the file and add `exec dwm` to the bottom.
+Run `startx`.
+## xrandr
+Run `xrandr` and find the name of the output.
 ```sh
-xrandr --output Virtual-01 --mode 1920x1080
+xrandr --output <output-name> --mode 1920x1080
 ```
