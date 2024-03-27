@@ -76,3 +76,4 @@ cd ~/suckless/st && sudo make clean install
 ```sh
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 ```
+Delete the last lines in the file and add `exec dwm` to the bottom
