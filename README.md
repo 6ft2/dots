@@ -84,3 +84,10 @@ Run `xrandr` and find the name of the output.
 xrandr --output <output-name> --mode 1920x1080 --rate 60
 ```
 You can place that line in your `.xinitrc` before `exec dwm` and with a `&` at the end.
+## Patching
+In the dwm directory, create a `patches` directory and save the `.diff` files there. Go back to `dwm/` and:
+```sh
+patch -i patches/foo.diff
+```
+And recompile with `sudo make clean install`
+Exit dwm with `Alt+Shift+Q` and log back in.
