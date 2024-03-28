@@ -83,3 +83,4 @@ Run `xrandr` and find the name of the output.
 ```sh
 xrandr --output <output-name> --mode 1920x1080 --rate 60
 ```
+You can place that line in your `.xinitrc` before `exec dwm` and with a `&` at the end.
