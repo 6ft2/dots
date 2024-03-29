@@ -4,7 +4,7 @@ PROMPT='%F{#888888}%1~%f %F{White}%f  '
 ############# ALIAS ##############
 ##################################
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
