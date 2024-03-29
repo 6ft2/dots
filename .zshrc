@@ -8,7 +8,7 @@ alias ls='ls --color=auto --group-directories-first'
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
-alias rm='rm -r'
+alias rm='rm -rf'
 alias cp='cp -r'
 
 alias dwm='cd ~/.config/dwm && ls'
