@@ -27,3 +27,6 @@ alias xi='sudo xbps-install'
 alias xu='sudo xbps-install -Su'
 alias xlist='xbps-query -l'
 alias make='rm config.h && make && sudo make install'
+
+LS_COLORS='rs=0:di=1;94:fi=1;37:ln=1;34'
+export LS_COLORS
