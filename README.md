@@ -54,7 +54,7 @@ starship preset nerd-font-symbols -o ~/.config/starship.toml
 # Suckless
 ## Preparing
 ```sh
-sudo pacman -S libx11-devel libxft-devel libxft libxinerama-devel
+sudo pacman -S libx11-devel libxft-devel libxinerama-devel
 ```
 In your home directory
 ```sh
