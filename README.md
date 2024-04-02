@@ -17,8 +17,8 @@ su me && cd
 ```
 ## Installing programs
 ```sh
-sudo pacman -S git base-devel neovim firefox alacritty neofetch helix ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols-mono ripgrep fd npm fish starship ffmpeg ffmpegthumbnailer fzf mpv lf zathura picom
-```
+sudo pacman -S git base-devel neovim firefox alacritty neofetch helix ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols-mono ripgrep fd npm fish starship ffmpeg mpv lf zathura picom feh
+`` f`
 ## Installing yay
 ```sh
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd && rm -rf yay
