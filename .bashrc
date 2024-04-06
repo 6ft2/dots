@@ -1,4 +1,6 @@
 export PS1='\[$(tput setaf 6)\]\W \[$(tput sgr0)\]\$ '
+PROMPT_COMMAND='printf "\033];%s\a" "${PWD/#$HOME/"~"}"'
+#PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/"~"}"'
 
 ##################################
 ############# ALIAS ##############
