@@ -17,7 +17,7 @@ su me && cd
 ```
 ## Installing programs
 ```sh
-sudo pacman -S git base-devel neovim firefox alacritty neofetch helix ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols-mono ripgrep fd npm fish starship zsh ffmpeg mpv lf zathura picom feh
+sudo pacman -S git base-devel neovim firefox alacritty neofetch helix ttf-jetbrains-mono ttf-font-awesome ripgrep fd npm fish starship zsh ffmpeg mpv lf zathura picom feh
 ```
 ## Installing yay
 ```sh
