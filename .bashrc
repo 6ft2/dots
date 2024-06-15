@@ -13,13 +13,6 @@ alias lla='ls -al'
 alias rm='rm -rf'
 alias cp='cp -r'
 
-alias dwm='cd ~/.config/dwm && ls'
-alias blocks='cd ~/.config/dwm/dwmblocks && ls'
-alias menu='cd ~/.config/dwm/dmenu && ls'
-alias sterm='cd ~/.config/st/ && ls'
-alias scripts='cd ~/.config/Scripts && ls'
-alias mk ='rm -rf config.h && sudo make clean install'
-
 alias fetch='clear && neofetch'
 
 alias xr='sudo xbps-remove -R'
